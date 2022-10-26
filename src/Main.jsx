@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Main.css';
+import Button from './Button.jsx'
 
 class Main extends Component {
 
@@ -17,25 +18,36 @@ class Main extends Component {
     };
 
     minusOneHandler = () => {
-        this.setState({ counter: this.state.counter - 1 });
+        this.setState({ counter: Math.max(0, this.state.counter - 1 )});
     };
 
     minusFiveHandler = () => {
-        this.setState({ counter: this.state.counter - 5 });
+        this.setState({ counter: Math.max(0, this.state.counter - 5 )});
     };
 
     resetHandler = () => {
         this.setState({ counter: this.state.counter = 0 });
     };
 
-// no const allowed inside class component
+ render() {
 
-render() {
+    let circleClass = "";
+
+    if (this.state.counter === 0) {
+        circleClass = "circle";
+
+    } else if (this.state.counter % 2 === 0) {
+        circleClass = "circleeven";
+
+    } else {
+        circleClass = "circleodd";
+    }
+
 return ( 
 
 <main>
     <div>
-       <h2 className="counter">{this.state.counter}</h2>
+       <h2 className={circleClass}>{this.state.counter}</h2>
 
         <button onClick={this.addFiveHandler}className="btn">Add Five</button>
         <button onClick={this.addOneHandler} className="btn">Add One</button>
@@ -51,4 +63,5 @@ return (
 
 export default Main;
 
-// <h1 className="counter">
+// no const allowed inside class component
+

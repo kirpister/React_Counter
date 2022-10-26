@@ -1,8 +1,34 @@
-.counter {
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(215, 248, 197, 0.71) 10%, rgba(182, 246, 182, 0.763) 70%);
+    color: black;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleodd {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(242, 252, 236, 0.71) 10%, rgba(148, 250, 148, 0.763) 70%);
+    color: black;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleeven {
+    background: radial-gradient(circle, rgba(148, 250, 148, 0.763) 10%, rgba(242, 252, 236, 0.71) 70%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     color: black;
     margin: 0 auto;
     margin-bottom: 2.5rem;
@@ -16,22 +42,18 @@ h2 {
     font-size: 3rem;
 }
 
-button {
-    /* background-color: rgb(148, 250, 148); */
+/* button {
     background: rgba(148, 250, 148, 0.638);
     border-radius: 5px;
     padding: 0.5rem;
     width: 120px;
     border: none;
     margin: 0.5rem;
-}
+} */
 
 main {
     height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url(greenbg.jpg);
-    background-position: center;
-    background-repeat: no-repeat; */
 }
