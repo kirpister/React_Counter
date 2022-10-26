@@ -1,0 +1,9 @@
+header {
+    height: 15vh;
+    background-color: rgba(71, 242, 79, 0.3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* rgb(100, 99, 99); */

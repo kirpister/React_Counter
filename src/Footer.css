@@ -1,0 +1,12 @@
+footer {
+    height: 10vh;
+    background-color: rgba(71, 242, 79, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    letter-spacing: 2px;
+    color: rgb(245, 242, 242);
+}
