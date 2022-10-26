@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Main.css';
-import Button from './Button.jsx'
+import Button from './UI/Button.jsx'
 
 class Main extends Component {
 
@@ -48,12 +48,18 @@ return (
 <main>
     <div>
        <h2 className={circleClass}>{this.state.counter}</h2>
+    
+       <Button click={this.addFiveHandler}>Add Five</Button>
+       <Button click={this.addOneHandler}>Add One</Button>
+       <Button click={this.resetHandler}>Reset</Button>
+       <Button click={this.minusOneHandler}>Remove One</Button>
+       <Button click={this.minusFiveHandler}>Remove Five</Button>
 
-        <button onClick={this.addFiveHandler}className="btn">Add Five</button>
+        {/* <button onClick={this.addFiveHandler}className="btn">Add Five</button>
         <button onClick={this.addOneHandler} className="btn">Add One</button>
         <button onClick={this.resetHandler} className="btn">Reset</button>
         <button onClick={this.minusOneHandler} className="btn">Remove One</button>
-        <button onClick={this.minusFiveHandler} className="btn">Remove Five</button>
+        <button onClick={this.minusFiveHandler} className="btn">Remove Five</button> */}
     </div>
 </main>
 
